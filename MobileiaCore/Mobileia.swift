@@ -11,10 +11,10 @@ import Foundation
 public class Mobileia {
     static var instance : Mobileia = Mobileia()
     
-    var appId : Int = 0;
-    var deviceToken : String = "";
+    public var appId : Int = 0;
+    public var deviceToken : String = "";
     
-    static func getInstance() -> Mobileia {
+    public static func getInstance() -> Mobileia {
         return instance;
     }
 }
