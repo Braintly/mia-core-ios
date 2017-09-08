@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Mobileia {
+public class Mobileia {
     static var instance : Mobileia = Mobileia()
     
     var appId : Int = 0;
