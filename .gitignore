@@ -1,0 +1,12 @@
+## OS X Finder
+.DS_Store
+
+## Build generated
+build/
+DerivedData
+
+# Swift Package Manager
+.build/
+
+# Carthage
+Carthage/Build
