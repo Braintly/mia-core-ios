@@ -10,6 +10,7 @@
 		D6EE7B301F63306700118D21 /* MobileiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EE7B261F63306600118D21 /* MobileiaCore.framework */; };
 		D6EE7B351F63306700118D21 /* MobileiaCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE7B341F63306700118D21 /* MobileiaCoreTests.swift */; };
 		D6EE7B371F63306700118D21 /* MobileiaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D6EE7B291F63306600118D21 /* MobileiaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6EE7B411F63313F00118D21 /* Mobileia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE7B401F63313F00118D21 /* Mobileia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D6EE7B2F1F63306700118D21 /* MobileiaCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileiaCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EE7B341F63306700118D21 /* MobileiaCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileiaCoreTests.swift; sourceTree = "<group>"; };
 		D6EE7B361F63306700118D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6EE7B401F63313F00118D21 /* Mobileia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobileia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				D6EE7B291F63306600118D21 /* MobileiaCore.h */,
 				D6EE7B2A1F63306600118D21 /* Info.plist */,
+				D6EE7B401F63313F00118D21 /* Mobileia.swift */,
 			);
 			path = MobileiaCore;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					D6EE7B251F63306600118D21 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					D6EE7B2E1F63306700118D21 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6EE7B411F63313F00118D21 /* Mobileia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		D6EE7B3B1F63306700118D21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobileia.MobileiaCore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +347,7 @@
 		D6EE7B3C1F63306700118D21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +366,7 @@
 		D6EE7B3E1F63306700118D21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MobileiaCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobileia.MobileiaCoreTests;
@@ -369,6 +378,7 @@
 		D6EE7B3F1F63306700118D21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MobileiaCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobileia.MobileiaCoreTests;
@@ -396,6 +406,7 @@
 				D6EE7B3C1F63306700118D21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6EE7B3D1F63306700118D21 /* Build configuration list for PBXNativeTarget "MobileiaCoreTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +415,7 @@
 				D6EE7B3F1F63306700118D21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
