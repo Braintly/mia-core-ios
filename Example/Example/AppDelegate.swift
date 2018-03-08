@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MobileiaCore
+//import MobileiaCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Configurar Mobileia
-        Mobileia.getInstance().appId = 8;
+        //Mobileia.getInstance().appId = 8;
         
         return true
     }

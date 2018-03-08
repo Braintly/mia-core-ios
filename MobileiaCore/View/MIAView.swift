@@ -17,26 +17,26 @@ public class MIAView: UIView {
     // Varible que almacena el controlador
     var viewController : UIViewController!;
     
-    override required init(frame: CGRect) {
+    override public required init(frame: CGRect) {
         super.init(frame: frame)
         setupViews();
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupViews()
     }
     
     // Funcion abstracta para configurar las vistas
-    open func setupViews() { }
+    public func setupViews() { }
     // Funcion abstracta para configurar los constraints
-    open func setupConstraints() { }
+    public func setupConstraints() { }
     // Funcion para setear el controlador
-    open func setViewController(_ controller: UIViewController){
+    public func setViewController(_ controller: UIViewController){
         viewController = controller;
     }
     
-    override func updateConstraints() {
+    override public func updateConstraints() {
         // AutoLayout constraints
         if(shouldSetupConstraints) {
             // Configurar Constraints

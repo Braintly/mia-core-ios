@@ -14,28 +14,28 @@ public class MIATableViewCell: UITableViewCell {
     // Variable para tener tamaño de pantalla
     let screenSize = UIScreen.main.bounds
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         setupViews();
     }
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews();
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupViews();
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override public func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
     
-    override func updateConstraints() {
+    override public func updateConstraints() {
         // AutoLayout constraints
         if(shouldSetupConstraints) {
             // Configurar Constraints
@@ -47,8 +47,8 @@ public class MIATableViewCell: UITableViewCell {
     }
     
     // Funcion abstracta para configurar las vistas
-    open func setupViews() { }
+    public func setupViews() { }
     // Funcion abstracta para configurar los constraints
-    open func setupConstraints() { }
+    public func setupConstraints() { }
 
 }
