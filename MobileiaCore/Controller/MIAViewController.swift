@@ -8,15 +8,15 @@
 
 import UIKit
 
-public class MIAViewController<T : MIAView>: UIViewController {
+open class MIAViewController<T : MIAView>: UIViewController {
 
-    override public func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         // Cargamos Vista del controlador
         autoViewDidLoad();
     }
     
-    public func autoViewDidLoad(){
+    open func autoViewDidLoad(){
         // Creamos vista
         let parent = T(frame: CGRect.zero);
         // Asignamos el controlador
@@ -27,13 +27,13 @@ public class MIAViewController<T : MIAView>: UIViewController {
         parent.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
     }
 
-    override public func didReceiveMemoryWarning() {
+    open override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     // MARK: - Class Methods
     // Funcion que se encarga de generar el controlador por defecto
-    public class func factoryController() -> MIAViewController {
+    open class func factoryController() -> MIAViewController {
         return self.init();
     }
 
