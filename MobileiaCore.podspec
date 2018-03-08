@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MobileiaCore"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "A short description of MobileiaCore."
 
   # This description is used to generate tags and improve search results.
@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #s.license      = "MIT (example)"
+   s.license      = { :type => "Apache License 2.0", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/MobileIA/mia-core-ios.git", :tag => "0.0.5" }
+  s.source       = { :git => "https://github.com/MobileIA/mia-core-ios.git", :tag => "0.0.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
