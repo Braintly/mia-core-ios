@@ -11,7 +11,7 @@ import UIKit
 open class MIATableView: MIAView {
 
     // Tabla de la home
-    let tableView = UITableView()
+    open let tableView = UITableView()
     
     open override func setupViews(){
         // Configuramos listado Listado

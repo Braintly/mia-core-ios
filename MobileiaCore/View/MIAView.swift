@@ -11,11 +11,11 @@ import PureLayout
 
 open class MIAView: UIView {
     // Determina si ya se configuro los contraints
-    var shouldSetupConstraints = true
+    open var shouldSetupConstraints = true
     // Variable para tener tamaño de pantalla
-    let screenSize = UIScreen.main.bounds
+    open let screenSize = UIScreen.main.bounds
     // Varible que almacena el controlador
-    var viewController : UIViewController!;
+    open var viewController : UIViewController!;
     
     public override required init(frame: CGRect) {
         super.init(frame: frame)
