@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MIAViewController<T : MIAView>: UIViewController {
+public class MIAViewController<T : MIAView>: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

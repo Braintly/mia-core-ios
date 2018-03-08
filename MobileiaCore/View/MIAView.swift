@@ -9,7 +9,7 @@
 import UIKit
 import PureLayout
 
-class MIAView: UIView {
+public class MIAView: UIView {
     // Determina si ya se configuro los contraints
     var shouldSetupConstraints = true
     // Variable para tener tamaño de pantalla
@@ -28,11 +28,11 @@ class MIAView: UIView {
     }
     
     // Funcion abstracta para configurar las vistas
-    func setupViews() { }
+    open func setupViews() { }
     // Funcion abstracta para configurar los constraints
-    func setupConstraints() { }
+    open func setupConstraints() { }
     // Funcion para setear el controlador
-    func setViewController(_ controller: UIViewController){
+    open func setViewController(_ controller: UIViewController){
         viewController = controller;
     }
     
@@ -47,7 +47,7 @@ class MIAView: UIView {
         super.updateConstraints()
     }
     
-    class func factoryView() -> MIAView {
+    public class func factoryView() -> MIAView {
         return self.init(frame: CGRect.zero);
     }
 }

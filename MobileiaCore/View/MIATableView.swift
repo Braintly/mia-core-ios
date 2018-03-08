@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MIATableView: MIAView {
+public class MIATableView: MIAView {
 
     // Tabla de la home
     let tableView = UITableView()

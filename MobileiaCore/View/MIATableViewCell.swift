@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MIATableViewCell: UITableViewCell {
+public class MIATableViewCell: UITableViewCell {
     // Determina si ya se configuro los contraints
     var shouldSetupConstraints = true
     // Variable para tener tamaño de pantalla
@@ -47,8 +47,8 @@ class MIATableViewCell: UITableViewCell {
     }
     
     // Funcion abstracta para configurar las vistas
-    func setupViews() { }
+    open func setupViews() { }
     // Funcion abstracta para configurar los constraints
-    func setupConstraints() { }
+    open func setupConstraints() { }
 
 }

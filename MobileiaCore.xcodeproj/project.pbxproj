@@ -15,6 +15,7 @@
 		D6EE7B351F63306700118D21 /* MobileiaCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE7B341F63306700118D21 /* MobileiaCoreTests.swift */; };
 		D6EE7B371F63306700118D21 /* MobileiaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D6EE7B291F63306600118D21 /* MobileiaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6EE7B411F63313F00118D21 /* Mobileia.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE7B401F63313F00118D21 /* Mobileia.swift */; };
+		D6FA030B20516D3600A5BFEC /* MobileiaCore.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D6FA030A20516D3600A5BFEC /* MobileiaCore.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		D6EE7B341F63306700118D21 /* MobileiaCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileiaCoreTests.swift; sourceTree = "<group>"; };
 		D6EE7B361F63306700118D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6EE7B401F63313F00118D21 /* Mobileia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mobileia.swift; sourceTree = "<group>"; };
+		D6FA030A20516D3600A5BFEC /* MobileiaCore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MobileiaCore.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		D6EE7B1C1F63306600118D21 = {
 			isa = PBXGroup;
 			children = (
+				D6FA030A20516D3600A5BFEC /* MobileiaCore.podspec */,
 				D67AF8331F64274E007F2D1B /* Frameworks */,
 				D6EE7B281F63306600118D21 /* MobileiaCore */,
 				D6EE7B331F63306700118D21 /* MobileiaCoreTests */,
@@ -211,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FA030B20516D3600A5BFEC /* MobileiaCore.podspec in Resources */,
 				D681759D2050DCAD00BAB83D /* Controller in Resources */,
 				D681759E2050DCAD00BAB83D /* View in Resources */,
 			);
