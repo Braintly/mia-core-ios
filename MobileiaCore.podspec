@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MobileiaCore"
-  s.version      = "0.0.9"
+  s.version      = "0.0.10"
   s.summary      = "Libreria Core para MobileIA"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Esta la base para todos los proyectos y librerias que son creados por MobileIA!
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/MobileIA/mia-core-ios.git", :tag => "0.0.9" }
+  s.source       = { :git => "https://github.com/MobileIA/mia-core-ios.git", :tag => "0.0.10" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +92,7 @@ Esta la base para todos los proyectos y librerias que son creados por MobileIA!
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MobileiaCore/*.{swift,plist}", "MobileiaCore/Controller/*.swift", , "MobileiaCore/Rest/*.swift", "MobileiaCore/View/*.swift"
+  s.source_files  = "MobileiaCore/*.{swift,plist}", "MobileiaCore/Controller/*.swift", "MobileiaCore/Rest/*.swift", "MobileiaCore/View/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -134,6 +134,6 @@ Esta la base para todos los proyectos y librerias que son creados por MobileIA!
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "PureLayout"
 
 end
