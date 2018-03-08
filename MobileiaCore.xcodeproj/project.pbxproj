@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D67AF82E1F63547B007F2D1B /* RestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67AF82D1F63547B007F2D1B /* RestBody.swift */; };
+		D67AF8301F6354C2007F2D1B /* RestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67AF82F1F6354C2007F2D1B /* RestError.swift */; };
 		D6EE7B301F63306700118D21 /* MobileiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EE7B261F63306600118D21 /* MobileiaCore.framework */; };
 		D6EE7B351F63306700118D21 /* MobileiaCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE7B341F63306700118D21 /* MobileiaCoreTests.swift */; };
 		D6EE7B371F63306700118D21 /* MobileiaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D6EE7B291F63306600118D21 /* MobileiaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D67AF82D1F63547B007F2D1B /* RestBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestBody.swift; path = Rest/RestBody.swift; sourceTree = "<group>"; };
+		D67AF82F1F6354C2007F2D1B /* RestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestError.swift; path = Rest/RestError.swift; sourceTree = "<group>"; };
 		D6EE7B261F63306600118D21 /* MobileiaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MobileiaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EE7B291F63306600118D21 /* MobileiaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileiaCore.h; sourceTree = "<group>"; };
 		D6EE7B2A1F63306600118D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,9 +56,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D67AF82C1F63544A007F2D1B /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				D67AF82D1F63547B007F2D1B /* RestBody.swift */,
+				D67AF82F1F6354C2007F2D1B /* RestError.swift */,
+			);
+			name = Rest;
+			sourceTree = "<group>";
+		};
+		D67AF8331F64274E007F2D1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D6EE7B1C1F63306600118D21 = {
 			isa = PBXGroup;
 			children = (
+				D67AF8331F64274E007F2D1B /* Frameworks */,
 				D6EE7B281F63306600118D21 /* MobileiaCore */,
 				D6EE7B331F63306700118D21 /* MobileiaCoreTests */,
 				D6EE7B271F63306600118D21 /* Products */,
@@ -73,6 +94,7 @@
 		D6EE7B281F63306600118D21 /* MobileiaCore */ = {
 			isa = PBXGroup;
 			children = (
+				D67AF82C1F63544A007F2D1B /* Rest */,
 				D6EE7B291F63306600118D21 /* MobileiaCore.h */,
 				D6EE7B2A1F63306600118D21 /* Info.plist */,
 				D6EE7B401F63313F00118D21 /* Mobileia.swift */,
@@ -201,6 +223,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6EE7B411F63313F00118D21 /* Mobileia.swift in Sources */,
+				D67AF8301F6354C2007F2D1B /* RestError.swift in Sources */,
+				D67AF82E1F63547B007F2D1B /* RestBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +357,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MobileiaCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -353,6 +381,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MobileiaCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

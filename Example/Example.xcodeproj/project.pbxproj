@@ -14,8 +14,6 @@
 		D67AF7F41F6350DB007F2D1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67AF7F21F6350DB007F2D1B /* LaunchScreen.storyboard */; };
 		D67AF7FF1F6350DB007F2D1B /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67AF7FE1F6350DB007F2D1B /* ExampleTests.swift */; };
 		D67AF80A1F6350DB007F2D1B /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67AF8091F6350DB007F2D1B /* ExampleUITests.swift */; };
-		D67AF8291F6352DB007F2D1B /* MobileiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67AF8281F6352DB007F2D1B /* MobileiaCore.framework */; };
-		D67AF82A1F6352DB007F2D1B /* MobileiaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D67AF8281F6352DB007F2D1B /* MobileiaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +31,29 @@
 			remoteGlobalIDString = D67AF7E51F6350DB007F2D1B;
 			remoteInfo = Example;
 		};
+		D6EDB00D1F6628C000B64CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6EDB0081F6628C000B64CA8 /* MobileiaCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6EE7B261F63306600118D21;
+			remoteInfo = MobileiaCore;
+		};
+		D6EDB00F1F6628C000B64CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6EDB0081F6628C000B64CA8 /* MobileiaCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D6EE7B2F1F63306700118D21;
+			remoteInfo = MobileiaCoreTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D67AF82B1F6352DB007F2D1B /* Embed Frameworks */ = {
+		D6EDB0141F66293300B64CA8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D67AF82A1F6352DB007F2D1B /* MobileiaCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +74,7 @@
 		D67AF8051F6350DB007F2D1B /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D67AF8091F6350DB007F2D1B /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		D67AF80B1F6350DB007F2D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D67AF8281F6352DB007F2D1B /* MobileiaCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileiaCore.framework; path = ../Carthage/Build/iOS/MobileiaCore.framework; sourceTree = "<group>"; };
+		D6EDB0081F6628C000B64CA8 /* MobileiaCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MobileiaCore.xcodeproj; path = ../MobileiaCore.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D67AF8291F6352DB007F2D1B /* MobileiaCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,9 +157,18 @@
 		D67AF81B1F6351A1007F2D1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D67AF8281F6352DB007F2D1B /* MobileiaCore.framework */,
+				D6EDB0081F6628C000B64CA8 /* MobileiaCore.xcodeproj */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6EDB0091F6628C000B64CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6EDB00E1F6628C000B64CA8 /* MobileiaCore.framework */,
+				D6EDB0101F6628C000B64CA8 /* MobileiaCoreTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +181,7 @@
 				D67AF7E21F6350DB007F2D1B /* Sources */,
 				D67AF7E31F6350DB007F2D1B /* Frameworks */,
 				D67AF7E41F6350DB007F2D1B /* Resources */,
-				D67AF82B1F6352DB007F2D1B /* Embed Frameworks */,
+				D6EDB0141F66293300B64CA8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,6 +265,12 @@
 			mainGroup = D67AF7DD1F6350DB007F2D1B;
 			productRefGroup = D67AF7E71F6350DB007F2D1B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D6EDB0091F6628C000B64CA8 /* Products */;
+					ProjectRef = D6EDB0081F6628C000B64CA8 /* MobileiaCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D67AF7E51F6350DB007F2D1B /* Example */,
@@ -254,6 +279,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D6EDB00E1F6628C000B64CA8 /* MobileiaCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MobileiaCore.framework;
+			remoteRef = D6EDB00D1F6628C000B64CA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D6EDB0101F6628C000B64CA8 /* MobileiaCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MobileiaCoreTests.xctest;
+			remoteRef = D6EDB00F1F6628C000B64CA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D67AF7E41F6350DB007F2D1B /* Resources */ = {
