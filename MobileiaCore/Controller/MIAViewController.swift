@@ -10,6 +10,8 @@ import UIKit
 
 open class MIAViewController<T : MIAView>: UIViewController {
 
+    open var miaView : T!;
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         // Cargamos Vista del controlador
@@ -18,15 +20,15 @@ open class MIAViewController<T : MIAView>: UIViewController {
     
     open func autoViewDidLoad(){
         // Creamos vista
-        let parent = T(frame: CGRect.zero);
+        miaView = T(frame: CGRect.zero);
         // Asignamos el tag por default
-        parent.tag = 1;
+        miaView.tag = 1;
         // Asignamos el controlador
-        parent.setViewController(self);
+        miaView.setViewController(self);
         // Agregamos la vista al controlador
-        self.view.addSubview(parent)
+        self.view.addSubview(miaView)
         // AutoLayout
-        parent.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
+        miaView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets.zero)
     }
 
     open override func didReceiveMemoryWarning() {
