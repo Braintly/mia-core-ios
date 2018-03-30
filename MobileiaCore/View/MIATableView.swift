@@ -8,12 +8,20 @@
 
 import UIKit
 
+public protocol MIATableRefreshDelegate {
+    func tableViewResfresh(_ tableView: UITableView);
+}
+
 open class MIATableView: MIAView {
 
     // Tabla de la home
     open let tableView = UITableView();
     // Contenedor para mostrar vista vacia
     open let containerEmpty = UIView(frame:CGRect.zero);
+    // Loading para refrescar cuando se hace pull down
+    open let refreshControl = UIRefreshControl();
+    // Delegate para cuando refresca la lista
+    open var refreshDelegate : MIATableRefreshDelegate?;
     
     open override func setupViews(){
         // Configuramos listado Listado
@@ -22,6 +30,34 @@ open class MIATableView: MIAView {
         
         containerEmpty.isHidden = true;
         self.addSubview(containerEmpty);
+    }
+    
+    @objc func refreshTableView(_ sender: Any){
+        if(self.refreshDelegate != nil){
+            self.refreshDelegate?.tableViewResfresh(self.tableView);
+        }
+    }
+    
+    open func setRefreshDelegate(_ delegate : MIATableRefreshDelegate){
+        self.refreshDelegate = delegate;
+        // Configurar loading
+        setupRefreshControl();
+    }
+    
+    open func stopRefresh(){
+        self.refreshControl.endRefreshing()
+        //self.activityIndicatorView.stopAnimating()
+    }
+    
+    open func setupRefreshControl(){
+        // Agregar loading a la tabla
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl;
+        } else {
+            tableView.addSubview(refreshControl);
+        }
+        // Configure Refresh Control
+        refreshControl.addTarget(self, action: #selector(refreshTableView(_:)), for: .valueChanged);
     }
     
     open override func setupConstraints(){
