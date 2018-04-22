@@ -13,6 +13,7 @@
 		D681759E2050DCAD00BAB83D /* View in Resources */ = {isa = PBXBuildFile; fileRef = D681759C2050DCAD00BAB83D /* View */; };
 		D6DEA735208CF3510042258A /* MIAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEA733208CF3510042258A /* MIAString.swift */; };
 		D6DEA736208CF3510042258A /* MIADateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEA734208CF3510042258A /* MIADateHelper.swift */; };
+		D6DEA739208CF4250042258A /* MIABaseRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DEA738208CF4250042258A /* MIABaseRealm.swift */; };
 		D6EE7B301F63306700118D21 /* MobileiaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EE7B261F63306600118D21 /* MobileiaCore.framework */; };
 		D6EE7B351F63306700118D21 /* MobileiaCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EE7B341F63306700118D21 /* MobileiaCoreTests.swift */; };
 		D6EE7B371F63306700118D21 /* MobileiaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = D6EE7B291F63306600118D21 /* MobileiaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +38,7 @@
 		D681759C2050DCAD00BAB83D /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
 		D6DEA733208CF3510042258A /* MIAString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIAString.swift; sourceTree = "<group>"; };
 		D6DEA734208CF3510042258A /* MIADateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIADateHelper.swift; sourceTree = "<group>"; };
+		D6DEA738208CF4250042258A /* MIABaseRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIABaseRealm.swift; sourceTree = "<group>"; };
 		D6EE7B261F63306600118D21 /* MobileiaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MobileiaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EE7B291F63306600118D21 /* MobileiaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileiaCore.h; sourceTree = "<group>"; };
 		D6EE7B2A1F63306600118D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		D6DEA737208CF4190042258A /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				D6DEA738208CF4250042258A /* MIABaseRealm.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		D6EE7B1C1F63306600118D21 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +124,7 @@
 		D6EE7B281F63306600118D21 /* MobileiaCore */ = {
 			isa = PBXGroup;
 			children = (
+				D6DEA737208CF4190042258A /* Realm */,
 				D6DEA732208CF3510042258A /* Helper */,
 				D681759B2050DCAD00BAB83D /* Controller */,
 				D681759C2050DCAD00BAB83D /* View */,
@@ -248,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DEA739208CF4250042258A /* MIABaseRealm.swift in Sources */,
 				D6DEA735208CF3510042258A /* MIAString.swift in Sources */,
 				D6EE7B411F63313F00118D21 /* Mobileia.swift in Sources */,
 				D6DEA736208CF3510042258A /* MIADateHelper.swift in Sources */,

@@ -92,7 +92,7 @@ Esta la base para todos los proyectos y librerias que son creados por MobileIA!
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MobileiaCore/*.{swift,plist}", "MobileiaCore/Controller/*.swift", "MobileiaCore/Rest/*.swift", "MobileiaCore/View/*.swift", "MobileiaCore/Helper/*.swift"
+  s.source_files  = "MobileiaCore/*.{swift,plist}", "MobileiaCore/Controller/*.swift", "MobileiaCore/Rest/*.swift", "MobileiaCore/View/*.swift", "MobileiaCore/Helper/*.swift", "MobileiaCore/Realm/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -135,5 +135,6 @@ Esta la base para todos los proyectos y librerias que son creados por MobileIA!
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "PureLayout"
+    s.dependency "RealmSwift"
 
 end
