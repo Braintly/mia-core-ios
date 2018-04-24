@@ -8,13 +8,13 @@
 
 import Foundation
 
-public class MIAErrorRest{
-    @objc dynamic var code : Int = 0;
-    @objc dynamic var message : String = "";
+open class MIAErrorRest{
+    @objc open dynamic var code : Int = 0;
+    @objc open dynamic var message : String = "";
     
-    init(){}
+    public init(){}
     
-    init(code: Int, message: String) {
+    public init(code: Int, message: String) {
         self.code = code;
         self.message = message;
     }

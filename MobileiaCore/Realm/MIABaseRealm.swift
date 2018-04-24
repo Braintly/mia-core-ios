@@ -11,6 +11,8 @@ import RealmSwift
 
 open class MIABaseRealm {
     
+    public init(){}
+    
     open func save(entity: Object){
         let realm = getRealm();
         try! realm.write {

@@ -11,6 +11,8 @@ import Alamofire
 
 open class MIABaseRest {
     
+    public init(){}
+    
     open func post(_ path: String, parameters: Parameters){
         
     }
