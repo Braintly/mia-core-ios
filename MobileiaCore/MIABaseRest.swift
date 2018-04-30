@@ -53,9 +53,11 @@ open class MIABaseRest {
                 // Verificar si es una respuesta correcta
                 let success = json["success"] as! Bool;
                 if(success == false){
-                    //let error = json["error"] as! [String:Any];
-                    //callbackError(MIAErrorRest(code: error["code"] as! Int, message: error["message"] as! String));
-                    callbackError(MIAErrorRest(code: -2, message: "Problemas al parsear."));
+                    
+                    let error = json["error"] as! [String:Any];
+                    callbackError(MIAErrorRest(code: error["code"] as! Int, message: error["message"] as! String));
+                    //callbackError(MIAErrorRest(code: -2, message: "Problemas al parsear."));
+                    
                     return;
                 }
                 
