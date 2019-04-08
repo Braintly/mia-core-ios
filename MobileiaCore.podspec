@@ -137,7 +137,7 @@ Esta la base para todos los proyectos y librerias que son creados por MobileIA!
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "PureLayout"
     s.dependency "RealmSwift"
-    s.dependency "Alamofire", "~> 4.5"
-    s.dependency "AlamofireImage", "~> 3.3"
+    s.dependency "Alamofire"
+    s.dependency "AlamofireImage"
 
 end
