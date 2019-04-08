@@ -15,11 +15,11 @@ public protocol MIATableRefreshDelegate {
 open class MIATableView: MIAView {
 
     // Tabla de la home
-    open let tableView = UITableView();
+    public let tableView = UITableView();
     // Contenedor para mostrar vista vacia
-    open let containerEmpty = UIView(frame:CGRect.zero);
+    public let containerEmpty = UIView(frame:CGRect.zero);
     // Loading para refrescar cuando se hace pull down
-    open let refreshControl = UIRefreshControl();
+    public let refreshControl = UIRefreshControl();
     // Delegate para cuando refresca la lista
     open var refreshDelegate : MIATableRefreshDelegate?;
     

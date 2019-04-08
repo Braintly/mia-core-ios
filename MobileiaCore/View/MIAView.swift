@@ -13,7 +13,7 @@ open class MIAView: UIView {
     // Determina si ya se configuro los contraints
     open var shouldSetupConstraints = true
     // Variable para tener tamaño de pantalla
-    open let screenSize = UIScreen.main.bounds
+    public let screenSize = UIScreen.main.bounds
     // Varible que almacena el controlador
     open var viewController : UIViewController!;
     

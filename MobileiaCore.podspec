@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MobileiaCore"
-  s.version      = "0.0.24"
+  s.version      = "0.0.25"
   s.swift_version = "4.0"
   s.summary      = "Libreria Core para MobileIA"
 
@@ -82,7 +82,7 @@ Esta la base para todos los proyectos y librerias que son creados por MobileIA!
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/MobileIA/mia-core-ios.git", :tag => "0.0.24" }
+  s.source       = { :git => "https://github.com/MobileIA/mia-core-ios.git", :tag => "0.0.25" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,7 +93,7 @@ Esta la base para todos los proyectos y librerias que son creados por MobileIA!
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MobileiaCore/*.{swift,plist}", "MobileiaCore/Controller/*.swift", "MobileiaCore/Rest/*.swift", "MobileiaCore/View/*.swift", "MobileiaCore/Helper/*.swift", "MobileiaCore/Realm/*.swift"
+  s.source_files  = "MobileiaCore/*.swift", "MobileiaCore/Controller/*.swift", "MobileiaCore/Rest/*.swift", "MobileiaCore/View/*.swift", "MobileiaCore/Helper/*.swift", "MobileiaCore/Realm/*.swift"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

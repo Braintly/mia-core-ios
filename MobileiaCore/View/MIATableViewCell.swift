@@ -12,7 +12,7 @@ open class MIATableViewCell: UITableViewCell {
     // Determina si ya se configuro los contraints
     open var shouldSetupConstraints = true
     // Variable para tener tamaño de pantalla
-    open let screenSize = UIScreen.main.bounds
+    public let screenSize = UIScreen.main.bounds
     
     open override func awakeFromNib() {
         super.awakeFromNib()
