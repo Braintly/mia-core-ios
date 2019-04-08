@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MobileiaCore"
-  s.version      = "0.0.23"
+  s.version      = "0.0.24"
   s.swift_version = "4.0"
   s.summary      = "Libreria Core para MobileIA"
 
@@ -82,7 +82,7 @@ Esta la base para todos los proyectos y librerias que son creados por MobileIA!
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/MobileIA/mia-core-ios.git", :tag => "0.0.23" }
+  s.source       = { :git => "https://github.com/MobileIA/mia-core-ios.git", :tag => "0.0.24" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
