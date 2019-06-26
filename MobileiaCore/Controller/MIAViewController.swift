@@ -67,7 +67,7 @@ open class MIAViewController<T : MIAView>: UIViewController {
                                                object: nil)
     }
     
-    @objc func keyboardWillShowForResizing(notification: Notification) {
+    @objc open func keyboardWillShowForResizing(notification: Notification) {
         let info : NSDictionary = notification.userInfo! as NSDictionary
         let keyboardSize = (info.object(forKey: UIKeyboardFrameEndUserInfoKey) as AnyObject).cgRectValue.size
         
@@ -77,12 +77,12 @@ open class MIAViewController<T : MIAView>: UIViewController {
         }
     }
     
-    @objc func keyboardWillHideForResizing(notification: Notification) {
+    @objc open func keyboardWillHideForResizing(notification: Notification) {
         self.constraintBottom.constant = 0;
         self.miaView.layoutIfNeeded();
     }
     
-    func removeForKeyboardNotifications() {
+    open func removeForKeyboardNotifications() {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
