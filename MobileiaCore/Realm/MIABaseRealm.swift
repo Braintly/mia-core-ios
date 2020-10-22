@@ -26,7 +26,7 @@ open class MIABaseRealm {
         // Iniciamos transacción
         try! realm.write {
             // Guardamos el objeto
-            realm.add(entity, update: true);
+            realm.add(entity, update: .all);
         }
     }
     // Funcion que guarda un listado de objetos
@@ -36,7 +36,7 @@ open class MIABaseRealm {
         // Iniciamos transacción
         try! realm.write {
             // Guardamos los objetos
-            realm.add(list, update: true);
+            realm.add(list, update: .all);
         }
     }
     

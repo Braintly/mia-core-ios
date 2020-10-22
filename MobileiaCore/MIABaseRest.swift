@@ -40,7 +40,7 @@ open class MIABaseRest {
         }
 
         // Ejecutamos llamada al servidor
-        Alamofire.request(getBaseUrl() + path, method: method, parameters: parameters, encoding: encoding, headers: ["Accept": "application/json"]).responseJSON { (response) in
+        AF.request(getBaseUrl() + path, method: method, parameters: parameters, encoding: encoding, headers: ["Accept": "application/json"]).responseJSON { (response) in
             
             // Verificamos si tuvo un error
             if response.error != nil {
@@ -49,7 +49,7 @@ open class MIABaseRest {
             }
             
             // Validamos como fue la respuesta
-            if let json = response.result.value as? [String:Any] {
+            if let json = response.value as? [String:Any] {
                 // Verificar si es una respuesta correcta
                 let success = json["success"] as! Bool;
                 if(success == false){
