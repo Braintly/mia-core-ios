@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Example
+//  MobileiaCore
 //
-//  Created by Matias Camiletti on 8/9/17.
-//  Copyright © 2017 Matias Camiletti. All rights reserved.
+//  Created by rsevil on 10/24/2020.
+//  Copyright (c) 2020 rsevil. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

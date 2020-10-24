@@ -18,7 +18,7 @@ open class MIAImageViewCell: MIATableViewCell {
         let placeholderImage = UIImage(named: "background_top_gol")!
         
         if(url.count > 0){
-            photoView.af_setImage(withURL: URL(string: url)!, placeholderImage: placeholderImage);
+            photoView.af.setImage(withURL: URL(string: url)!, placeholderImage: placeholderImage);
         }else{
             photoView.image = placeholderImage;
         }

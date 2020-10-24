@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (5.3.0)
+  - AlamofireImage (4.1.0):
+    - Alamofire (~> 5.1)
+  - MobileiaCore (0.0.26):
+    - Alamofire (~> 5.3.0)
+    - AlamofireImage (~> 4.1.0)
+    - PureLayout (~> 3.1.6)
+    - RealmSwift (~> 10.0.0)
+  - Nimble (7.3.4)
+  - PureLayout (3.1.6)
+  - Quick (1.2.0)
+  - Realm (10.0.0):
+    - Realm/Headers (= 10.0.0)
+  - Realm/Headers (10.0.0)
+  - RealmSwift (10.0.0):
+    - Realm (= 10.0.0)
+
+DEPENDENCIES:
+  - MobileiaCore (from `../`)
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - Alamofire
+    - AlamofireImage
+    - Nimble
+    - PureLayout
+    - Quick
+    - Realm
+    - RealmSwift
+
+EXTERNAL SOURCES:
+  MobileiaCore:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
+  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  MobileiaCore: c561d56f04d3c67d29c0ddd619a246c4d34fadb9
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Realm: 5654b8e5e45034d07b219e089034be2ef7d1e7bf
+  RealmSwift: 5b4c8c85be4c14ff52054a4d80a8d338167dd79c
+
+PODFILE CHECKSUM: 1686a272885888c2866e222fae7a0b52a13999a7
+
+COCOAPODS: 1.9.3

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "0900"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D6EE7B251F63306600118D21"
-               BuildableName = "MobileiaCore.framework"
-               BlueprintName = "MobileiaCore"
+               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+               BuildableName = "MobileiaCore_Example.app"
+               BlueprintName = "MobileiaCore_Example"
+               ReferencedContainer = "container:MobileiaCore.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BuildableName = "MobileiaCore_Tests.xctest"
+               BlueprintName = "MobileiaCore_Tests"
                ReferencedContainer = "container:MobileiaCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,15 +40,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D6EE7B2E1F63306700118D21"
-               BuildableName = "MobileiaCoreTests.xctest"
-               BlueprintName = "MobileiaCoreTests"
+               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BuildableName = "MobileiaCore_Tests.xctest"
+               BlueprintName = "MobileiaCore_Tests"
                ReferencedContainer = "container:MobileiaCore.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +57,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D6EE7B251F63306600118D21"
-            BuildableName = "MobileiaCore.framework"
-            BlueprintName = "MobileiaCore"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "MobileiaCore_Example.app"
+            BlueprintName = "MobileiaCore_Example"
             ReferencedContainer = "container:MobileiaCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,21 +70,23 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D6EE7B251F63306600118D21"
-            BuildableName = "MobileiaCore.framework"
-            BlueprintName = "MobileiaCore"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "MobileiaCore_Example.app"
+            BlueprintName = "MobileiaCore_Example"
             ReferencedContainer = "container:MobileiaCore.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,15 +96,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D6EE7B251F63306600118D21"
-            BuildableName = "MobileiaCore.framework"
-            BlueprintName = "MobileiaCore"
+            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
+            BuildableName = "MobileiaCore_Example.app"
+            BlueprintName = "MobileiaCore_Example"
             ReferencedContainer = "container:MobileiaCore.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
