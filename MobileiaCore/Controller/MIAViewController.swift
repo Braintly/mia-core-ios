@@ -59,17 +59,17 @@ open class MIAViewController<T : MIAView>: UIViewController {
     func setupViewResizerOnKeyboardShown() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.keyboardWillShowForResizing),
-                                               name: Notification.Name.UIKeyboardWillShow,
+                                               name: UIResponder.keyboardWillShowNotification,
                                                object: nil)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.keyboardWillHideForResizing),
-                                               name: Notification.Name.UIKeyboardWillHide,
+                                               name: UIResponder.keyboardWillHideNotification,
                                                object: nil)
     }
     
     @objc open func keyboardWillShowForResizing(notification: Notification) {
         let info : NSDictionary = notification.userInfo! as NSDictionary
-        let keyboardSize = (info.object(forKey: UIKeyboardFrameEndUserInfoKey) as AnyObject).cgRectValue.size
+        let keyboardSize = (info.object(forKey: UIResponder.keyboardFrameEndUserInfoKey) as AnyObject).cgRectValue.size
         
         if keyboardSize.height != 0 {
             self.constraintBottom.constant = -keyboardSize.height;
@@ -83,7 +83,7 @@ open class MIAViewController<T : MIAView>: UIViewController {
     }
     
     open func removeForKeyboardNotifications() {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 }

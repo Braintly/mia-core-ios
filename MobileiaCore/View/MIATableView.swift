@@ -25,7 +25,7 @@ open class MIATableView: MIAView {
     
     open override func setupViews(){
         // Configuramos listado Listado
-        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.addSubview(tableView)
         
         containerEmpty.isHidden = true;
