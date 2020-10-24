@@ -9,6 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MobileiaCore'
   s.version          = '0.1.0'
+  s.swift_version    = '5.0'
   s.summary          = 'Libreria Core para MobileIA'
 
 # This description is used to generate tags and improve search results.

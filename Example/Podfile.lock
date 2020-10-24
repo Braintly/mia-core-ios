@@ -2,7 +2,7 @@ PODS:
   - Alamofire (5.3.0)
   - AlamofireImage (4.1.0):
     - Alamofire (~> 5.1)
-  - MobileiaCore (0.0.26):
+  - MobileiaCore (0.1.0):
     - Alamofire (~> 5.3.0)
     - AlamofireImage (~> 4.1.0)
     - PureLayout (~> 3.1.6)
@@ -38,7 +38,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
-  MobileiaCore: c561d56f04d3c67d29c0ddd619a246c4d34fadb9
+  MobileiaCore: fb20971fc8d79ef70e674318a0bc34d8ea363afa
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
