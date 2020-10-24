@@ -9,7 +9,16 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+Then open `MobileCore.xcworkspace` file with XCode >= 11.7.
+
+## Generate new version
+
+Increment version in podspec, commit and push.
+
+Then create a tag with the same name as the version in the podspec
+
+$ git tag "x.y.z"
+$ git push --tags
 
 ## Installation
 
@@ -19,10 +28,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'MobileiaCore'
 ```
-
-## Author
-
-rsevil, rodrigo.sevil@etermax.com
 
 ## License
 
