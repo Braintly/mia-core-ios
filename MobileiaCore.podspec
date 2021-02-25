@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MobileiaCore'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.swift_version    = '5.0'
   s.summary          = 'Libreria Core para MobileIA'
 

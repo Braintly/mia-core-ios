@@ -45,7 +45,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9B1D9D9C113E5A90243FD0CF /* Pods_MobileiaCore_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileiaCore_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7D50C7D8D25D6DC02E52D6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		C53FA014C2B3E32F37956C01 /* MobileiaCore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MobileiaCore.podspec; path = ../MobileiaCore.podspec; sourceTree = "<group>"; };
+		C53FA014C2B3E32F37956C01 /* MobileiaCore.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MobileiaCore.podspec; path = ../MobileiaCore.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E53E59D1C1A429CA1CF1BC21 /* Pods-MobileiaCore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileiaCore_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MobileiaCore_Tests/Pods-MobileiaCore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
