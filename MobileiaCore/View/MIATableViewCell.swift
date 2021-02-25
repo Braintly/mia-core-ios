@@ -39,6 +39,7 @@ open class MIATableViewCell: UITableViewCell {
         // AutoLayout constraints
         if(shouldSetupConstraints) {
             // Configurar Constraints
+            self.contentView.isUserInteractionEnabled = false // fixes Xcode12+ unclickable cells
             setupConstraints();
             // Ya se configuro
             shouldSetupConstraints = false

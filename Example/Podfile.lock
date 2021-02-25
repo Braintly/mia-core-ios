@@ -22,7 +22,7 @@ DEPENDENCIES:
   - Quick (~> 1.2.0)
 
 SPEC REPOS:
-  https://cdn.cocoapods.org/:
+  trunk:
     - Alamofire
     - AlamofireImage
     - Nimble
@@ -47,4 +47,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 1686a272885888c2866e222fae7a0b52a13999a7
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0
